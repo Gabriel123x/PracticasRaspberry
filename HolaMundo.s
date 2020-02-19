@@ -6,12 +6,12 @@ cadenafin:
 .text
 .global  main
 
-main:    push     {r7, lr} 
-         mov      r0, #1 
-         ldr      r1, =cadena 
-         mov      r2, #cadenafin -cadena 
-         mov      r7, #4  
-         swi      #0
-         mov      r0, #0 
-         pop      {r7, lr}  
-         bx       lr
+main:    PUSH    {r7, lr} 
+         MOV      r0, #1 
+         LDR      r1, =cadena 
+         MOV      r2, #cadenafin -cadena 
+         MOV      r7, #4  
+         SWI      #0
+         MOV      r0, #0 
+         POP      {r7, lr}  
+         BX       lr
