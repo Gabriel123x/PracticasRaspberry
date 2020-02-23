@@ -1,6 +1,6 @@
  .data
- msg01: .asciiz "Cantidad de números a leer: "
- msg02: .asciiz "Introducir número: "
+ msg01: .asciiz "Cantidad de nÃºmeros a leer: "
+ msg02: .asciiz "Introducir nÃºmero: "
  msg03: .asciiz "El resultado es: "
  .text
  main:
@@ -31,11 +31,11 @@
 
 add $t1 $t1 1
  blt $t1 $t0 b01
- # imprimir mensaje "El resultado es: "...
+ 
  la $a0 msg03
  li $v0 4
  syscall
- # imprimir el resultado
+
  move $a0 $t2
  li $v0 1
  syscall
