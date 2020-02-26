@@ -22,7 +22,7 @@ n:	.int	4		@ number of disks to move
 	
 	.text
 	.global main
-	.extern printf
+	@.extern printf
 
 	
 @ ---------------------------------------
